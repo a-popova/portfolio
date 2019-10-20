@@ -1,0 +1,2166 @@
+@import "normalize.css";
+@import "mixins.scss";
+
+@font-face {
+    font-family: 'Yeseva One';
+    src: url('../fonts/Yeseva_One/YesevaOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Futura Book';
+  src: url('../fonts/futura/Futura\ Book\ font.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Futura Heavy';
+  src: url('../fonts/futura/Futura\ Heavy\ font.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/proxima_ssv/proxima_ssv/Proxima\ Nova\ Thin.otf') format('opentype');
+}
+
+@mixin Yeseva {
+  font-family: 'Yeseva One';
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin Futura {
+  font-family: 'Futura Book';
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin Futura_Heavy {
+  font-family: 'Futura Heavy';
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin Proxima_Nova {
+  font-family: 'Proxima Nova';
+  font-weight: normal;
+  font-style: normal;
+}
+
+$width: 100%;
+
+$black: #131313;
+$brown: #e3b873;
+$white: #ffffff;
+
+
+.wrapper {
+  max-width: 1440px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: gray;
+  @include for-desktop {
+    max-width: 991px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  @include for-tablet {
+    max-width: 767px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  @include for-phone-only {
+    max-width: 479px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.header {
+  @include Futura();
+  width: $width;
+  height: 83px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $black;
+  @include for-phone-only {
+    height: 51px;
+  }
+  & h1:first-child {
+    width: 1px;
+  }
+  &--logo {
+    width: 20%;
+    margin-left: 5.69%;
+    color: $brown;
+    @include Futura_Heavy();
+    font-size: 14px;
+    @media screen and (max-width: 890px) {
+      width: 60%;
+    }
+    @include for-phone-only {
+      font-size: 12px;
+    }
+  }
+  &--navbar {
+    width: 50%;
+    @include for-tablet {
+      display: none;
+    }
+    @media screen and (max-width: 890px) {
+      display: none;
+    }
+  }
+  &--list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    color: $white;
+    font-size: 14px;
+    & li:first-child {
+      color: $brown;
+    }
+    & li:hover {
+      color: $brown;
+      cursor: pointer;
+    }
+  }
+  &--contact {
+    @include Futura_Heavy();
+    width: 30%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    @media screen and (max-width: 890px) {
+      width: 40%;
+    }
+  }
+  &--phone a{
+    color: $brown;
+    font-size: 14px;
+    @include for-tablet {
+      color: $white;
+      text-decoration: none;
+    }
+    @include for-phone-only {
+      font-size: 12px;
+    }
+  }
+  &--request_form {
+    @include for-desktop {
+      display: none;
+    }
+   @include for-phone-only {
+      display: none;
+    }
+    & input[type=submit]{
+      width: 161px;
+      height: 37px;
+      background-color: $brown;
+      border: none;
+      color: white;
+      text-decoration: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 13px;
+      &:hover {
+        border: 1px solid $black;
+      }
+    }
+  }
+}
+
+.main {
+  width: $width;
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  background-color: $black;
+  @include for-phone-only {
+    height: 476px;
+  }
+  &--instagram {
+    width: 5.69%;
+    height: 707px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $brown;
+    @include for-desktop {
+      display: none;
+    }
+    & p {
+      transform: rotate(90deg);
+      @include Futura_Heavy();
+      font-size: 14px;
+      & a{
+        color: $brown;
+        text-decoration: none;
+      }
+    }
+    & img {
+      height: 51px;
+      margin-top: 40px;
+    }
+  }
+  &--img {
+    width: 94.31%;
+    height: 707px;
+    box-sizing: border-box;
+    padding-left: 4%;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    @include for-desktop {
+      width: 100%;
+      height: 500px; 
+    }
+    @include for-tablet {
+      height: 476px;
+      padding: 0 15px;
+      width: 100%;
+    }
+    & img:first-child {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: auto;
+      opacity: 0.3;
+      @include for-tablet {
+        object-fit: cover;
+        height: 476px;
+      }
+    }
+  }
+  &--column {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    z-index: 1;
+    @include for-tablet {
+      width: 50%;
+    }
+    @include for-phone-only {
+      width: 100%;
+    }
+  }
+  &--heading {
+    line-height: 1.4;
+    & h1 {
+      margin: 0;
+      font-size: 40px;
+      @include for-desktop {
+        font-size: 26px;
+      }
+      @include for-tablet {
+        font-size: 23px;
+      }
+    }
+    & span {
+      color: $brown;
+      @include Yeseva();
+    }
+  }
+  &--text {
+    width: 95%;
+    margin: 1em 0;
+    line-height: 1.5;
+    @include Futura();
+    font-size: 22px;
+    @include for-phone-only {
+      font-size: 18px;
+    }
+    .nowrap {
+      white-space: nowrap;
+    }
+    p {
+      margin: 0;
+    }
+  }
+  &--buttons {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    @include for-phone-only {
+      display: block;
+      width: 100%;
+    }
+    & input[type=submit] {
+      width: 207px;
+      height: 51px;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+      @include Futura();
+      font-size: 13px;
+      @include for-phone-only {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+    & input[type=submit]:first-child {
+      background-color: $brown;
+      border: none;
+      margin-right: 20px;
+    }
+    & input[type=submit]:nth-child(2) {
+      background: none;
+      border: 1px solid $white;
+      @include for-phone-only {
+        display: none;
+      }
+    }
+    & input[type=submit]:last-child {
+      display: none;
+      @include for-phone-only {
+        width: 100%;
+        margin-bottom: 30px;
+        display: block;
+        background: none;
+        border: 1px solid $white;
+      }
+    }
+  }
+  &--scroll_down {
+    width: 17.15%;
+    height: 97px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: $black;
+    overflow: visible;
+    position: absolute;
+    top: 92%;
+    color: $white;
+    @media screen and (max-width: 890px) {
+      display: none;
+    }
+    @include for-tablet {
+      display: none;
+    }
+    & p {
+      margin-right: 20px;
+      @include Yeseva();
+      font-size: 14px;
+    }
+    &:hover {
+      color: $brown;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}
+
+.completed {
+  @include Futura();
+  width: $width;
+  height: 1000px;
+  box-sizing: border-box;
+  display: flex;
+  background-color: $black;
+  @include for-tablet {
+    height: auto;
+  }
+  @include for-phone-only {
+    height: auto;
+    padding: 80px 10px 0 10px;
+  }
+  &--description {
+    width: 40%;
+    height: 520px;
+    margin-left: 5%;
+    margin-top: 10%;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    @include for-tablet {
+      margin-top: 15%;
+    }
+    @include for-phone-only {
+      width: 100%;
+      margin: 0;
+    }
+    & h1, h2 {
+      color: $brown;
+      @include Yeseva();
+    }
+  }
+  &--heading {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    @include for-phone-only {
+      width: 50%;
+      align-self: center;
+      text-align: center;
+    }
+    & h1 {
+      font-size: 27px;
+      @include for-phone-only {
+        font-size: 22px;
+      }
+    }
+    & img {
+      @include for-tablet {
+        display: none;
+      }
+    }
+  }
+  &--text {
+    width: 90%;
+    line-height: 1.5;
+    font-size: 18px;
+    @include for-phone-only {
+      width: 100%;
+      padding: 0 10px;
+      text-align: center;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+  }
+  &--mobile_picture {
+    display: none;
+    @include for-phone-only {
+      margin: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+      position: relative;
+      & img:first-child,
+      & img:last-child {
+        max-width: 36px;
+        max-height: 36px;
+        position: absolute;
+        top: 50%;
+      }
+      & img:first-child {
+        left: 8%;
+      }
+      & img:last-child {
+        right: 8%;
+      }
+    }
+  }
+  &--columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: flex-start;
+    @include for-phone-only {
+      padding-left: 10px;
+    }
+      & h2 {
+        font-size: 18px;
+        @include for-phone-only {
+          font-size: 14px;
+        }
+      }
+      & p {
+        font-size: 15px;
+        line-height: 1.5;
+        @include for-phone-only {
+          font-size: 14px;
+        }
+      }
+      & div {
+        width: 40%;
+      }
+    & div:first-child {
+      p {
+      width: 70%;
+      }
+      @include for-phone-only {
+        width: 40%;
+        margin-right: 0.5em;
+      }
+    }
+  }
+  &--slider_container {
+    margin-top: 30px;
+    display: flex;
+    width: 206px;
+    justify-content: space-between;
+    align-items: center;
+    & img:hover {
+      cursor: pointer;
+    }
+    @include for-tablet {
+      display: none;
+    }
+  }
+  &--pictures {
+    width: 60%;
+    height: 570px;
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include for-phone-only {
+      display: none;
+    }
+  }
+  &--themes {
+    @include Yeseva();
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    & h4:first-child {
+      color: $brown;
+      line-height: 2;
+      border-bottom: 2px solid $brown;
+      opacity: 1;
+    }
+    & h4 {
+      color: $white;
+      opacity: 0.3;
+      margin-right: 5%;
+      font-size: 14px;
+      @include for-desktop {
+        font-size: 12px;
+      }
+    }
+    & h4:hover {
+      color: $brown;
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+  &--img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    & img:first-child {
+      width: 100%;
+      margin-right: 20px;
+    }
+    & img:nth-child(2) {
+      overflow: hidden;
+    }
+    & img:last-child {
+      width: 74.72px;
+      height: 74.72px;
+      position: absolute;
+      right: 3%;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.control {
+  width: $width;
+  margin-top: -18%;
+  box-sizing: border-box;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  @include for-desktop {
+    margin-top: -25%;
+  }
+  @include for-tablet {
+    background-color: $black;
+    color: $white;
+    padding: 260px 10px 0 10px;
+  }
+  @include for-phone-only {
+    padding-top: 160px;
+  }
+  &--text {
+    width: 196px;
+    height: 66.79px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $white;
+    @include Yeseva();
+    font-size: 20px;
+    @include for-tablet {
+      font-size: 22px;
+    }
+    & .icon {
+      width: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      & img:first-child,
+      & img:last-child {
+        width: 32px;
+        height: 1.54px;
+      }
+    }
+  }
+  &--video {
+    margin-top: 50px;
+    @include for-tablet {
+      width: 100%;
+    }
+    iframe {
+      @include for-tablet {
+        width: 100%;
+      }
+      @include for-phone-only {
+        width: 100%;
+        height: 207px;
+      }
+    }
+  }
+}
+
+.broadcast {
+  width: $width;
+  height: 500px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: $white;
+  @include for-tablet {
+    height: 600px;
+    padding: 15px;
+    background-color: $black;
+    color: $white;
+  }
+  &--text {
+    width: 54%;
+    margin-bottom: 3em;
+    @include Futura();
+    font-size: 20px;
+    line-height: 2;
+    text-align: center;
+    @include for-tablet {
+      width: 100%;
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+    @include for-phone-only {
+      font-size: 14px;
+    }
+    p {
+      margin: 0;
+    }
+    .nowrap {
+      white-space: nowrap;
+    }
+  }
+  &--form {
+    width: 60%;
+    @include for-tablet {
+      width: 100%;
+    }
+    & form {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      @include for-tablet{
+        flex-direction: column;
+        height: 300px;
+      }
+      & .name,
+      & .phone {
+        height: 51px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        @include for-tablet {
+          width: 100%;
+        }
+      }
+    }
+  }
+  & input[type=text] {
+    width: 231px;
+    border: none;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    @include Futura();
+    font-size: 18px;
+    @include for-tablet {
+      width: 100%;
+      background: none;
+      border-bottom: 1px solid $white;
+    }
+    &::-webkit-input-placeholder {
+      color: $black;
+      @include for-tablet {
+        color: $white;
+      }
+    }
+    &::-moz-placeholder {
+      color: $black;
+      @include for-tablet {
+        color: $white;
+      }
+    }
+    &:focus {
+      outline: none;
+      border: 2px solid $brown;
+    }
+  }
+  & label {
+    @include Futura();
+    font-size: 15px;
+    opacity: 0.7;
+  }
+  & input[type=submit]{
+    width: 200px;
+    height: 51px;
+    background-color: $brown;
+    border: none;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    @include Futura_Heavy();
+    font-size: 15px;
+    @include for-tablet{
+      width: 100%;
+    }
+    &:hover {
+      border: 1px solid $white;
+    }
+  }
+  &--checkbox {
+    & .container {
+      display: block;
+      position: relative;
+      padding-left: 30px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      color: $black;
+      opacity: 1;
+      font-size: 16px;
+      @include for-tablet {
+        color: $white;
+      }
+    }
+    & .container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+    & .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 18px;
+      width: 18px;
+      background-color: $brown;
+    }
+    & .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    & .container input:checked ~ .checkmark::after {
+      display: block;
+    }
+    & .container .checkmark::after {
+      left: 7px;
+      top: 2px;
+      width: 3px;
+      height: 8px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.types {
+  width: $width;
+  height: 850px;
+  box-sizing: border-box;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: $white;
+  @include for-desktop {
+    height: auto;
+  }
+  &--heading {
+    & h3 {
+      margin: 0;
+      @include Yeseva();
+      font-size: 20px;
+      @include for-desktop {
+        margin: 20px 0;
+        font-size: 22px;
+      }
+    }
+  }
+  &--examples {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    @include for-desktop {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    @include for-phone-only {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+  &--example {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    @include for-desktop {
+      margin: 20px 0;
+    }
+    @include for-phone-only {
+      margin: 20px 20px;
+    }
+    img {
+      display: block;
+      width: 100%;
+      max-width: 392px;
+    }
+  }
+  &--text {
+    width: 330px;
+    height: 286px;
+    margin-top: -130px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: $white;
+    color: $black;
+    overflow: visible;
+    box-shadow: 1px 1px 3px #f9f9f9;
+    @include for-phone-only {
+      width: 270px;
+      height: 241px;
+      margin-left: 0;
+    }
+    & h4 {
+      @include Yeseva();
+      font-size: 18px;
+      margin: 1em 0 0 1em;
+      @include for-phone-only {
+        font-size: 15px;
+      }
+    }
+    li {
+      @include Futura();
+      font-size: 15px;
+      color: #959595;
+      line-height: 1.8;
+      @include for-phone-only {
+        font-size: 13px;
+      }
+    }
+  }
+  &--price {
+    width: 228px;
+    height: 54px;
+    margin-top: -20px;
+    margin-left: 30px;
+    background-color: $brown;
+    color: $white;
+    overflow: visible;
+    @include Yeseva();
+    font-size: 18px;
+    text-align: center;
+    line-height: 3;
+    @include for-phone-only {
+      margin-left: 0;
+      font-size: 15px;
+      width: 190px;
+      height: 40px;
+    }
+  }
+}
+
+.measure {
+  width: $width;
+  height: 1000px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background-color: $white;
+  &--scheme {
+    width: 63.29%;
+    height: 692px;
+    margin-top: -30px;
+    background-image: url("../images/image\ 6.1.png");
+    background-repeat: no-repeat;
+    background-position-y: -50px;
+    overflow: hidden;
+    & .circle {
+      width: 636.12px;
+      height: 636.12px;
+      margin-left: -15%;
+      position: relative;
+      border: 2px solid $brown;
+      border-radius: 50%;
+      & .container {
+        & .container--item {
+          width: 80%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          &:first-child {
+            transform: rotate(-55deg) translate(324px) rotate(55deg);
+            margin: -22px;
+          }
+          &:nth-child(2) {
+            transform: rotate(-29deg) translate(318px) rotate(29deg);
+            margin: -23px;
+          }
+          &:nth-child(3) {
+            transform: rotate(2deg) translate(318px) rotate(-2deg);
+            margin: -30px;
+          }
+          &:last-child {
+            width: 60%;
+            transform: rotate(32deg) translate(318px) rotate(-32deg);
+            margin: -32px;
+            .nowrap {
+              white-space: nowrap;
+            }
+          }
+
+          & .circle_small {
+            width: 41.76px;
+            height: 41.76px;
+            box-sizing: content-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            background-color: $brown;
+            border: 15px solid $white;
+            border-radius: 50%;
+          }
+          & h2 {
+            color: $white;
+            @include Yeseva();
+            font-size: 18px;
+          }
+          & p {
+            color: $black;
+            @include Futura_Heavy();
+            font-size: 18px;
+            margin: 0;
+            line-height: 1.3;
+          }
+        }
+      }
+    }
+  }
+  &--request {
+    width: 36.81%;
+    display: flex;
+    flex-direction: column;
+    & .form {
+      display: flex;
+      align-self: flex-end;
+      & form {
+        width: 506px;
+        height: 509px;
+        padding-left: 60px;
+        box-sizing: border-box;
+        background-color: $black;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        & h4 {
+          width: 70%;
+          text-align: center;
+          margin: 0 0 0 8%;
+          @include Futura_Heavy();
+          font-size: 20px;
+        }
+        & input[type=text] {
+          width: 408px;
+          border: none;
+          background-color: $black;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+          @include Futura();
+          font-size: 18px;
+          &::-webkit-input-placeholder {
+            color: $white;
+          }
+          &::-moz-placeholder {
+            color: $white;
+          }
+          &:focus {
+            outline: none;
+            border: 2px solid $brown;
+          }
+        }
+        & label {
+          @include Futura();
+          font-size: 15px;
+          opacity: 0.7;
+        }
+        & .name,
+        & .phone,
+        & .email {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between;
+          line-height: 1.5;
+        }
+        & .checkbox {
+          & .container {
+            display: block;
+            position: relative;
+            padding-left: 30px;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            color: $white;
+            opacity: 1;
+            font-size: 16px;
+          }
+          & .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+          }
+          & .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 18px;
+            width: 18px;
+            background-color: $brown;
+          }
+          & .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+          }
+          & .container input:checked ~ .checkmark::after {
+            display: block;
+          }
+          & .container .checkmark::after {
+            left: 7px;
+            top: 2px;
+            width: 3px;
+            height: 8px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+        }
+        .button {
+          align-self: flex-end;
+          margin-right: 40px;
+        }
+          & input[type=submit] {
+            width: 200px;
+            height: 51px;
+            background-color: $brown;
+            border: none;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            @include Futura_Heavy();
+            font-size: 13px;
+            &:hover {
+              border: 1px solid $black;
+            }
+          }
+        
+      }
+  }
+    &--text {
+      margin-top: 30px;
+      margin-left: 30px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      & p {
+        width: 50%;
+        line-height: 1.3;
+        @include Futura_Heavy();
+        font-size: 20px;
+        color: $brown;
+      }
+    }
+  }
+  @include for-desktop {
+    display: none;
+  }
+}
+
+.styles {
+  width: $width;
+  height: 864px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-image: url("../images/group-22.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include for-phone-only {
+    height: auto;
+    flex-direction: column;
+    background: none;
+  }
+  &--list {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    @include for-phone-only {
+      width: 100%;
+      align-items: center;
+    }
+    & .heading {
+      width: 65%;
+      color: $brown;
+      margin-left: 3em;
+      @include Yeseva();
+      font-size: 27px;
+      line-height: 1.3;
+      @include for-tablet {
+        font-size: 22px;
+        margin-left: 10px;
+      }
+      @include for-phone-only {
+        margin: 20px 0;
+        text-align: center;
+        font-size: 22px;
+      }
+    }
+    & ul {
+      padding: 0;
+      margin-left: 4em;
+      color: $white;
+      list-style-type: none;
+      line-height: 2.7;
+      @include Proxima_Nova();
+      font-size: 20px;
+      li:first-child {
+        color: $brown;
+        line-height: 1.5;
+        border-bottom: 1px solid #e3b873;
+        width: 150px;
+      }
+      @include for-tablet {
+        font-size: 18px;
+        margin-left: 20px;
+      }
+      @include for-phone-only {
+        display: none;
+      }
+    }
+  }
+  &--mobile_picture {
+    display: none;
+    @include for-phone-only {
+      margin: 10px 0;
+      margin-bottom: -30%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    & img:first-child, 
+    & img:last-child {
+      position: absolute;
+      top: 50%;
+    }
+    & img:first-child {
+      left: 8%;
+    }
+    & img:last-child {
+      right: 8%;
+    }
+  }
+  &--images {
+    width: 60%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    @include for-tablet {
+      margin-right: 10px;
+    }
+    @include for-phone-only {
+      display: none;
+    }
+    & img:first-child {
+      width: 100%;
+      max-width: 353.81px;
+      height: 556.86px;
+      margin-top: -40px;
+      @include for-desktop {
+        margin: 0 0 10px 0;
+      }
+    }
+    & img:nth-child(2) {
+      width: 100%;
+      max-width: 353.81px;
+      height: 349.47px;
+      margin-top: 30px;
+      margin-bottom: -40px;
+      @include for-desktop {
+        display: none;
+      }
+    }
+    & img:nth-child(3) {
+      width: 100%;
+      max-width: 354px;
+      height: 275px;
+      margin-top: -100px;
+      margin-right: 60px;
+      @include for-desktop {
+        margin: 0;
+      }
+    }
+    & img:last-child {
+      width: 100%;
+      max-width: 353.81px;
+      height: 625.23px;
+      margin: 30px 60px 30px 0;
+      @include for-desktop {
+        display: none;
+      }
+    }
+  }
+}
+
+.design_project {
+  width: $width;
+  height: 580px;
+  padding-top: 100px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $white;
+  @include for-desktop {
+    height: auto;
+    padding-top: 20px;
+    background-color: $black;
+    color: $white;
+  }
+  @include for-phone-only {
+    padding-top: 130px;
+  }
+  &--heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    h3 {
+      @include Yeseva();
+      font-size: 20px;
+      @include for-phone-only {
+        font-size: 22px;
+      }
+    }
+    p {
+      width: 53%;
+      text-align: center;
+      @include Futura();
+      font-size: 20px;
+      line-height: 1.5;
+      .nowrap {
+        white-space: nowrap;
+      }
+      @include for-phone-only {
+        width: 85%;
+        font-size: 15px;
+      }
+    }
+  }
+  &--examples {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    @include for-desktop {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-top: 0;
+    }
+    & img {
+      height: 421px;
+    }
+  }
+  &--example {
+    margin: 0 15px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    img {
+      width: 100%;
+      max-width: 392px;
+    }
+    @include for-desktop {
+      margin: 20px 20px;
+    }
+    @include for-phone-only {
+      margin: 30px 20px;
+    }
+    &:nth-child(3) {
+      & span {
+        display: none;
+        @include for-desktop {
+          display: inline;
+        }
+      }
+      & .hide {
+        @include for-desktop {
+            display: none;
+        }
+      }
+    }
+  }
+  &--text {
+    width: 330px;
+    margin-top: -130px;
+    margin-left: 30px;
+    background-color: $white;
+    color: $black;
+    overflow: visible;
+    @include for-phone-only {
+      width: 270px;
+      height: auto;
+      margin-left: 0;
+    }
+    h4 {
+      margin: 1em 0 1em 1.5em;
+      padding: 0;
+      @include Yeseva();
+      font-size: 18px;
+      @include for-phone-only {
+        font-size: 15px;
+      }
+    }
+    .list {
+      padding: 0;
+      margin: 1em 0 3em 3em;
+      line-height: 1.8;
+      color: #959595;
+      @include Futura();
+      font-size: 15px;
+      @include for-phone-only {
+        font-size: 13px;
+      }
+    }
+  }
+  &--price {
+    width: 228px;
+    height: 54px;
+    margin-top: -20px;
+    margin-left: 30px;
+    padding-left: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: $brown;
+    color: $white;
+    overflow: visible;
+    @include Yeseva();
+    font-size: 18px;
+    @include for-phone-only {
+      width: 190px;
+      height: 40px;
+      margin-left: 0;
+      padding-left: 2.5em;
+      font-size: 15px;
+    }
+  }
+}
+
+.process {
+  width: $width;
+  height: 1100px;
+  box-sizing: border-box;
+  padding-top: 45%;
+  display: flex;
+  background-color: $black;
+  @include for-desktop {
+    padding-top: 50px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  &--description {
+    width: 40%;
+    margin-left: 5em;
+    margin-top: -8em;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    @include for-desktop {
+      width: 100%;
+      margin: 20px 0;
+      align-items: center;
+      text-align: center;
+    }
+    & .description--heading {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      p {
+        @include Futura_Heavy();
+        font-size: 15px;
+      }
+      .main_heading {
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        h1 {
+          width: 50%;
+          margin-right: 10px;
+          color: $brown;
+          @include Yeseva();
+          font-size: 27px;
+          @include for-desktop {
+            width: 100%;
+          }
+        }
+        img {
+          align-self: flex-end;
+          @include for-desktop {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  &--text {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    @include for-desktop {
+      display: none;
+    }
+    h2 {
+      @include Yeseva();
+      font-size: 18px;
+    }
+    h3 {
+      color: $brown;
+      @include Yeseva();
+      font-size: 15px;
+    }
+    p {
+      margin: 0;
+      margin-top: 0.7em;
+      line-height: 1.8;
+      @include Futura();
+      font-size: 15px;
+    }
+  }
+  &--slider_container {
+    display: flex;
+    width: 287px;
+    justify-content: space-between;
+    align-items: center;
+    @include for-desktop {
+      display: none;
+    }
+    & img:hover {
+      cursor: pointer;
+    }
+  }
+  &--steps {
+    width: 60%;
+    margin-right: 5em;
+    @include for-desktop {
+      width: 100%;
+      margin: 0;
+    }
+    & .process--container {
+      width: 765px;
+      height: 180px;
+      margin: 20px 0;
+      color: #5a5a5a;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      @include for-desktop {
+        width: 100%;
+        margin: 0 auto;
+      }
+      @include for-tablet {
+        color: $white;
+      }
+      & .process--item {
+        width: 30%;
+        h2 {
+          width: 16px;
+          @include Yeseva();
+          font-size: 15px;
+          line-height: 1.5;
+          border-bottom: 1px solid rgba(227, 184, 115, 0.3);
+        }
+        
+        &:first-child {
+          h2 {
+            border-bottom: 1px solid $brown;
+          }
+          p {
+            width: 70%;
+          }
+          .nowrap {
+            white-space: nowrap;
+          }
+        } 
+        p {
+          width: 50%;
+          margin: 0;
+          @include Futura();
+          font-size: 15px;
+        }
+      }
+      & .process--item:first-child{
+        color: $white;
+        opacity: 1;
+        }
+    }
+  }
+  &--img {
+  margin-top: 3em;
+  img {
+    width: 100%;
+    max-width: 765px;
+    height: 376.64px;
+  }
+  @include for-desktop {
+    margin: 3em auto;
+    text-align: center;
+  }
+  @include for-tablet {
+    padding: 0 10px;
+  }
+  @include for-phone-only {
+    display: none;
+  }
+ }
+}
+
+.team {
+  width: $width;
+  height: 600px;
+  padding-top: 15%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $black;
+  @include for-desktop {
+    height: auto;
+    padding-top: 0;
+  }
+  @include for-phone-only {
+    padding-top: 12%;
+  }
+  &--heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    color: $white;
+    @include for-phone-only {
+      padding: 0 10px;
+    }
+    h3 {
+      @include Yeseva();
+      font-size: 20px;
+      @include for-phone-only {
+        font-size: 22px;
+      }
+    }
+    p {
+      width: 60%;
+      text-align: center;
+      line-height: 1.5;
+      @include Futura();
+      font-size: 20px;
+      @include for-phone-only {
+        width: 100%;
+        font-size: 15px;
+      }
+    }
+  }
+  &--members {
+    width: 85.83%;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    & img {
+      height: 421px;
+    }
+    @include for-desktop {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &--member {
+    margin: 0 15px;
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-direction: column;
+    @include for-desktop {
+      align-items: center;
+      margin-bottom: 80px;
+    }
+    & img:first-child {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        top: -9%;
+        left: -9%;
+    }
+    & img {
+      width: 100%;
+      max-width: 272.24px;
+      max-height: 380px;
+    }
+  }
+  &--signature {
+    width: 233px;
+    height: 137px;
+    margin-top: -130px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $white;
+    color: $black;
+    overflow: visible;
+    @include for-desktop {
+      margin-left: 0;
+    }
+    h4 {
+      margin: 0;
+      @include Yeseva();
+      font-size: 18px;
+    }
+    p {
+      @include Futura();
+      font-size: 18px;
+      color: #959595;
+    }
+  }
+  &--experience {
+    width: 233px;
+    height: 44px;
+    margin-top: -20px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $brown;
+    color: $white;
+    overflow: visible;
+    @include Yeseva();
+    font-size: 13px;
+    @include for-desktop {
+      margin-left: 0;
+    }
+  }
+  &--text {
+    width: 45%;
+    text-align: center;
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    @include Futura();
+    font-size: 20px;
+    p {
+      margin: 1em 0 0 0;
+      .nowrap {
+        white-space: nowrap;
+      }
+    }
+    @include for-desktop {
+      display: none;
+    }
+  }
+}
+
+.clients {
+  width: $width;
+  height: 1600px;
+  padding-top: 35%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $white;
+  @include for-desktop {
+    height: auto;
+    padding-top: 0;
+  }
+  @include for-phone-only {
+    display: none;
+  }
+  &--heading {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: $black;
+    @include for-desktop {
+      margin-top: 20px;
+    }
+    h3 {
+      @include Yeseva();
+      font-size: 20px;
+    }
+    p {
+      width: 80%;
+      text-align: center;
+      line-height: 1.5;
+      @include Futura();
+      font-size: 20px;
+    }
+  }
+  &--cards {
+    width: 90%;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    @include for-desktop {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }
+  &--card {
+    margin: 0 15px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px #f9f9f9, -5px -5px 5px #f9f9f9;
+    @include for-desktop {
+      width: 60%;
+      margin: 30px 15px;
+    }
+    & .clients--name {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      img {
+        margin: 1em 1em;
+      }
+      h4 {
+        width: 50%;
+        line-height: 1.3;
+        @include Yeseva();
+        font-size: 18px;
+      }
+    }
+  }
+  &--review {
+    padding: 0 1em 4em 1em;
+    background-color: $white;
+    color: $black;
+    p {
+      margin: 0;
+      line-height: 2;
+      color: #959595;
+      @include Futura();
+      font-size: 15px;
+    }
+  }
+  &--experience {
+    width: 293.75px;
+    height: 54.03px;
+    margin-bottom: -1.4em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: $brown;
+    color: $white;
+    box-shadow: 1px 1px 5px $brown;
+    @include for-tablet {
+      width: 100%;
+    }
+    .square {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-right: 1px solid $white;
+      img {
+        width: 32.35px;
+        height: 31.35px;
+        margin-right: 1em;
+      }
+    }
+    .time {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 32.78px;
+        height: 31.35px;
+        margin-right: 1em;
+      }
+    }
+  }
+}
+
+.questions {
+  width: 100%;
+  height: 0;
+  box-sizing: border-box;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include for-desktop {
+    display: block;
+    height: auto;
+  }
+  & form {
+    width: 61.32%;
+    height: 445.32px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $black;
+    color: $white;
+    z-index: 1;
+    @include for-desktop {
+      width: 100%;
+      height: auto;
+      box-sizing: border-box;
+      align-items: center;
+      padding: 0 20px;
+    }
+    @include for-tablet {
+      width: 100%;
+      height: auto;
+      box-sizing: border-box;
+      align-items: flex-start;
+      padding: 0 20px;
+    }
+    & h3 {
+      width: 70%;
+      text-align: center;
+      @include Yeseva();
+      font-size: 20px;
+      @include for-desktop {
+        margin: 50px 0;
+      }
+      @include for-tablet {
+        align-self: center;
+        margin: 50px 0;
+      }
+      @include for-phone-only {
+        margin-top: 0;
+      }
+    }
+    & input[type=text] {
+      width: 100%;
+      border: none;
+      background-color: $black;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      @include Futura();
+      font-size: 18px;
+      @include for-desktop {
+        width: 100%;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #ffffff;
+      }
+      &::-webkit-input-placeholder {
+        color: $white;
+      }
+      &::-moz-placeholder {
+        color: $white;
+      }
+      &:focus {
+        outline: none;
+        border: 2px solid $brown;
+      }
+    }
+    & label {
+      @include Futura();
+      font-size: 15px;
+      opacity: 0.7;
+    }
+    .name_phone {
+      width: 60%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      @include for-tablet {
+        width: 100%;
+        display: block;
+      }
+      & .name,
+      & .phone {
+        line-height: 1.5;
+      }
+    }
+    & .question {
+      width: 60%;
+      line-height: 1.5;
+      @include for-tablet {
+        width: 100%;
+      }
+      input[type=text] {
+        @include for-desktop {
+          margin-bottom: 20px;
+          border-bottom: 1px solid #ffffff;
+        }
+      }
+    }
+    & .checkbox {
+      & .container {
+        display: block;
+        position: relative;
+        padding-left: 30px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: $white;
+        opacity: 1;
+        font-size: 16px;
+      }
+      & .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+      & .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 18px;
+        width: 18px;
+        background-color: $brown;
+      }
+      & .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      & .container input:checked ~ .checkmark::after {
+        display: block;
+      }
+      & .container .checkmark::after {
+        left: 7px;
+        top: 2px;
+        width: 3px;
+        height: 8px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+    & .button {
+      @include for-tablet {
+        width: 100%;
+      }
+      & input[type=submit]{
+        width: 200px;
+        height: 51px;
+        background-color: $brown;
+        border: none;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        @include Futura_Heavy();
+        font-size: 15px;
+        @include for-desktop {
+          margin: 40px 0;
+        }
+        @include for-tablet {
+          width: 100%;
+          margin-top: 40px;
+        }
+        &:hover {
+          border: 1px solid $black;
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  width: $width;
+  box-sizing: border-box;
+  padding-top: 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/image\ 7.2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  @include for-desktop {
+    padding: 20px;
+  }
+  &--wrapper {
+    background-color: #181818;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    z-index: 0;
+    @include for-desktop {
+      box-sizing: border-box;
+      background-color: $black;
+      opacity: 1;
+    }
+    }
+  &--address {
+    color: $brown;
+    text-align: center;
+    line-height: 1.5;
+    margin: 3em 0 1em 0;
+    z-index: 1;
+    h3 {
+      margin: 0;
+      font-size: 20px;
+      @include for-phone-only {
+        font-size: 18px;
+      }
+    }
+    a {
+      color: $brown;
+      text-decoration: none;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+  &--social_icons {
+    z-index: 1;
+    @include for-desktop {
+      margin: 10px 0;
+    }
+    img {
+      @include for-desktop {
+      max-height: 39px;
+      max-width: 39px;
+      margin: 0 5px;
+      }
+    }
+    a {
+      margin: 0 0.3em;
+    }
+  }
+  &--map {
+    width: 64.24%;
+    margin: 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    @include for-desktop {
+      width: 100%;
+      order: -1;
+    }
+    & img {
+      width: 100%;
+      max-width: 925px;
+      margin: 20px 0;
+    }
+  }
+}
+
+.footer {
+  width: $width;
+  height: 133px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $black;
+  @include for-phone-only {
+    display: none;
+  }
+}

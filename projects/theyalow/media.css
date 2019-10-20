@@ -1,0 +1,421 @@
+@font-face {
+  font-family: 'Arial MT';
+  src: url("assets/fonts/arial-mt-std-cufonfonts/arial-mt-std-light-586c341645fe0.otf") format('truetype');  
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media (max-width:640px){
+  .section1 {
+    height: 389px;
+    background-image: none;
+  }
+
+  .section1 .block1 {
+    height: 389px;
+    width: 640px;
+  }
+
+  .section1 .block1 .block1-1 {
+    height: 62px;
+    width: 640px;
+    margin: 0;
+  } 
+
+  .section1 .block1 .block1-2 {
+    height: 327px;
+    width: 640px;
+    margin: 0;
+  }
+
+  .section1 .logo {
+    height: 62px;
+    width: 186px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url("assets/images/Layer\ 31@1X.png");
+  }
+
+  .section1 .logo-front {
+    height: 39px;
+    width: 40px;
+    position: relative;
+    background-image: url("assets/images/Shape 8 copy 3@1X.png");
+    background-size: cover;
+  }
+
+  .section1 .logo-front::after{
+    height: 37px;
+    width: 38px;
+    content: ' ';
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    background-image: url("assets/images/Shape\ 8\ copy\ 4@1X.png");
+    background-size: cover;
+  }
+
+  .section1 .logo h1 {
+    font-family: 'LucidaSans-Italic';
+    font-size: 18px;
+    font-weight: normal;
+    color: #ffffff;
+    letter-spacing: 1.3px;
+    padding-left: 3px;
+  }
+
+  .section1 .navbar {;
+    padding: 0;
+  }
+
+  .section1 nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 62px;
+    width: 455px;
+    line-height: 2.2;
+    margin: 0;
+    padding: 0;
+    background-image: url("assets/images/Rectangle 2 copy@1X.png");
+    box-shadow: none;
+    list-style-type: none;
+  }
+
+  .section1 nav ul li a {
+    font-family: 'Segoe WP';
+    font-size: 18px;
+    color: rgba(155, 125, 8, 255);
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  .section1 .video {
+    height: 327px;
+    width: 640px;
+    margin: 0;
+  }
+
+  .section1 .video video {
+    width: 640px;
+  }
+
+  .section1 .text {
+    display: none;
+  }
+
+  .section1 .slideshow-container{
+    display: none;
+  }
+
+  .section2 {
+    height: 174px;
+    width: 640px;
+    background-image: url("assets/images/Layer\ 7.png");
+    box-shadow: -5px -5px, -10px -10px;
+    color: rgba(160, 131, 28, .6);
+  }
+
+  .section2 .block2 {
+    width: 640px;
+    height: 174px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .section2 .block2 .column {
+    width: auto;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section2 .block2 .column1,
+  .section2 .block2 .column2,
+  .section2 .block2 .column3 {
+    padding: 0;
+  }
+
+  .section2 .block2 .image-1 {
+    height: 61px;
+    width: 89px;
+    background-image: url(assets/images/Shape\ 2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+  
+  .section2 .block2 .image-2 {
+    height: 69px;
+    width: 67px;
+    background-image: url(assets/images/Shape\ 3.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .section2 .block2 .image-3 {
+    height: 69px;
+    width: 68px;
+    background-image: url(assets/images/Shape\ 4.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .section2 .block2 .text {
+    font-family: 'Segoe WP Light';
+    font-size: 24px;
+    color: #000000;
+  } 
+
+  .section3 {
+    height: 483px;
+    width: 640px;
+    background-image: none;
+  }
+
+  .section3 .block3 {
+    width: 640px;
+    height: 483px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .section3 .block3 .columns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .section3 .block3 .header {
+    display: none;
+  }
+
+  .section3 .image-video {
+    height: 250px;
+    width: 640px;
+  }
+
+  .section3 .block3 .column-left .image{
+    width: 299px;
+    height: 232px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("assets/images/Layer\ 22\ copy\ 3@1X.png");
+    margin: 9px;
+  }
+
+  .section3 .block3 .column-left .image .text {
+    font-family: 'Segoe WP Light';
+    font-size: 28px;
+    padding: 7px 34px 7px 26px;
+    line-height: 1.25;
+    color: #ffffff;
+  }
+
+
+  .section3 .block3 .column-left .image-video .video {
+    height: 232px;
+    width: 315px;
+    margin: 9px 9px 9px 0;
+  }
+
+  .section3 .block3 .column-left .date {
+    display: none;
+  }
+
+  .section3 .block3 .slidecontainer {
+    display: none;
+  }
+
+  .section3 .block3 .column-right {
+    height: 233px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f5c507;
+  }
+
+  .section3 .block3 .column-right .twitter {
+    height: 233px;
+    width: 310px;
+    display: flex;
+    justify-content: center;
+    background-image: none;
+  }
+
+
+  .section3 .block3 .column-right .twitter .number {
+    display: none;
+  }
+
+  .section3 .block3 .column-right .twitter .plus {
+    display: none;
+  }
+
+  .section3 .block3 .form {
+    height: 233px;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .section3 .block3 .form .message {
+    height: 42px;
+    width: 282px;
+    font-family: 'Arial MT';
+    font-size: 12px;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 25px;
+    color: #afaeae;
+    background-image: url("assets/images/Rounded\ Rectangle\ 2@1X.png");
+    background-repeat: no-repeat;
+  }
+
+  .section3 .block3 .form .message1 .block {
+    opacity: 1;
+  }
+
+  .section3 .block3 .form .message2 {
+    opacity: 0.7;
+  }
+
+  .section3 .block3 .form .message3 {
+    opacity: 0.6;
+  }
+
+  .section3 .block3 form {
+    height: 29px;
+    width: 270px;
+    display: flex;
+    padding-right: 10px;
+  }
+
+  .section3 .form input[type=text] {
+    width: 201px;
+    -webkit-appearance: none; 
+    border: 1px solid #d0a806;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: inset 3px 5px 5px -2px #ddd;
+  }
+
+  .section3 .form input[type=submit] {
+    width: 69px;
+    font-family: 'Arial MT';
+    border: 1px solid #d0a806;
+    border-left: none;
+    background-color: #df9e1c;
+    color: #ffffff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .section4 {
+    height: 467px;
+    width: 640px;
+    background-image: url(assets/images/Layer\ 31@1X.png);
+  }
+
+  .section4 .block4 {
+    height: 467px;
+    width: 640px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .section4 .block4 .text {
+    width: 640px;
+    text-align: center;
+    font-family: 'PT Sans';
+    font-size: 42px;
+    color: #f5c506;
+  }
+
+.section4 .block4 .columns {
+  padding-left: 30px;
+  padding-right: 50px;
+}
+
+  .section4 .block4 .columns .column-right {
+    display: none;
+  }
+
+  .section4 .block4 .columns .column-left {
+    width: 640px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0;
+  }
+
+  footer {
+    height: 44px;
+    width: 640px;
+  }
+
+  footer .logo {
+    box-sizing: border-box;
+    width: 640px;
+    height: 44px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 66px;
+  }
+
+  footer .logo .logo-front {
+    height: 31px;
+    width: 31px;
+    position: relative;
+    background-image: url("assets/images/Shape 8 copy 3@1X.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  footer .logo .logo-front::after {
+    height: 29px;
+    width: 29px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    content: ' ';
+    background-image: url("assets/images/Shape\ 8\ copy\ 4@1X.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  footer .logo .text {
+    font-family: 'LucidaSans-Italic';
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 10px;
+    color: #ffffff;
+    text-shadow: 2px 2px #000000;
+  }
+}

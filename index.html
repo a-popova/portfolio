@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="dist/bundle.css">
+    <script async src="dist/bundle.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header--picture">
+                <img src="src/images/picture2.jpg">
+            </div>
+            <div class="header--name_column">
+                <h1>Anastasiya Popova</h1>
+                <a href="https://github.com/a-popova">Github</a>
+                <a href="https://www.linkedin.com/in/anastasiya-popova-b1368a79/">LinkedIn</a>
+            </div>
+        </header>
+            <div class="education">
+                <button type="button" class="collapsible"><h2>Education</h2></button>
+                <div class="education--container">
+                    <ul class="list">
+                        <li>School <br>2002-2011</li>
+                        <li>Gomel State Regional Lyceum <br>2011-2013</li>
+                        <li>European Humanities University <br>2013-2017</li>
+                        <li>RSSchool Courses <br>2019-2020</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="projects">
+                <button type="button" class="collapsible"><h2>Projects</h2></button>
+                <div class="projects--container">
+                    <div class="slide fade">
+                        <div class="collapsible-mobile">
+                            <button class="collapsible mobile" type="button"><h2><span class="show">show desc</span><span class="hide">hide desc</span></h2></button>
+                            <div class="description">
+                                <h1>Theyalow</h1>
+                                <ul class="list">
+                                    <li>Adaptive</li>
+                                    <li>Interactive elements</li>
+                                </ul>
+                                <div class="redirect">
+                                    <p>Click on image to see the project</p>
+                                    <img src="src/images/next.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="preview">
+                            <div class="js-preview" data-src="projects/theyalow/index.html" data-width="640">
+                                <img src="/src/images/theyalow.png" alt="Theyalow">
+                            </div>
+                        </div>
+                        <div class="swipe">
+                            <h1>swipe to see other</h1>
+                        </div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="collapsible-mobile">
+                            <button class="collapsible mobile" type="button"><h2><span class="show">show desc</span><span class="hide">hide desc</span></h2></button>
+                            <div class="description">
+                                <h1>Repair-design-project</h1>
+                                <ul class="list">
+                                    <li>Responsive</li>
+                                    <li>Overflow</li>
+                                    <li>Complex design</li>
+                                </ul>
+                                <div class="redirect">
+                                    <p>Click on image to see the project</p>
+                                    <img src="src/images/next.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="preview">
+                            <div class="js-preview" data-src="projects/repair-design-project/index.html" data-width="375">
+                                <img src="/src/images/repair-design-project.png" alt="repair-design-project">
+                            </div>
+                        </div>
+                        <div class="swipe">
+                            <h1>swipe to see other</h1>
+                        </div>
+                    </div>
+                    <a class="left">&#10094</a>
+                    <a class="right">&#10095</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="iframe-container hidden">
+        <div class="iframe-container_buttons">
+            <button class="js-back" type="button">Back</button>
+            <button class="js-switch" type="button">Switch</button>
+        </div>
+        <iframe></iframe>
+    </div>
+</body>
+
+</html>

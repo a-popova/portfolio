@@ -1,0 +1,2843 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+ html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  
+  /* Sections
+     ========================================================================== */
+  
+  /**
+   * Remove the margin in all browsers.
+   */
+  
+  body {
+    margin: 0;
+  }
+  
+  /**
+   * Render the `main` element consistently in IE.
+   */
+  
+  main {
+    display: block;
+  }
+  
+  /**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+  
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  
+  /* Grouping content
+     ========================================================================== */
+  
+  /**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+  
+  hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /* Text-level semantics
+     ========================================================================== */
+  
+  /**
+   * Remove the gray background on active links in IE 10.
+   */
+  
+  a {
+    background-color: transparent;
+  }
+  
+  /**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+  
+  abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+  }
+  
+  /**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+  
+  b,
+  strong {
+    font-weight: bolder;
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /**
+   * Add the correct font size in all browsers.
+   */
+  
+  small {
+    font-size: 80%;
+  }
+  
+  /**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+  
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  sub {
+    bottom: -0.25em;
+  }
+  
+  sup {
+    top: -0.5em;
+  }
+  
+  /* Embedded content
+     ========================================================================== */
+  
+  /**
+   * Remove the border on images inside links in IE 10.
+   */
+  
+  img {
+    border-style: none;
+  }
+  
+  /* Forms
+     ========================================================================== */
+  
+  /**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+  
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+  }
+  
+  /**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+  
+  button,
+  input { /* 1 */
+    overflow: visible;
+  }
+  
+  /**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+  
+  button,
+  select { /* 1 */
+    text-transform: none;
+  }
+  
+  /**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+  
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+  
+  /**
+   * Remove the inner border and padding in Firefox.
+   */
+  
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+  
+  /**
+   * Restore the focus styles unset by the previous rule.
+   */
+  
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+  
+  /**
+   * Correct the padding in Firefox.
+   */
+  
+  fieldset {
+    padding: 0.35em 0.75em 0.625em;
+  }
+  
+  /**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+  
+  legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+  }
+  
+  /**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+  
+  progress {
+    vertical-align: baseline;
+  }
+  
+  /**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+  
+  textarea {
+    overflow: auto;
+  }
+  
+  /**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+  
+  [type="checkbox"],
+  [type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+  }
+  
+  /**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+  
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+  
+  /**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+  
+  [type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+  }
+  
+  /**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+  
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  
+  /**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+  
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+  }
+  
+  /* Interactive
+     ========================================================================== */
+  
+  /*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+  
+  details {
+    display: block;
+  }
+  
+  /*
+   * Add the correct display in all browsers.
+   */
+  
+  summary {
+    display: list-item;
+  }
+  
+  /* Misc
+     ========================================================================== */
+  
+  /**
+   * Add the correct display in IE 10+.
+   */
+  
+  template {
+    display: none;
+  }
+  
+  /**
+   * Add the correct display in IE 10.
+   */
+  
+  [hidden] {
+    display: none;
+  }
+@font-face {
+  font-family: "Yeseva One";
+  src: url(fonts/ad67651d51e18b1036b8732281056087.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Futura Book";
+  src: url(fonts/f9f02ed05aa86534c3842d44cb20d6c4.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Futura Heavy";
+  src: url(fonts/3ea9695ee3af8a5e17413f22249f361a.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url(fonts/8f0bc01ce5e5becef482d277cb72b728.otf) format("opentype");
+}
+.wrapper {
+  max-width: 1440px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: gray;
+}
+@media (max-width: 991px) {
+  .wrapper {
+    max-width: 991px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .wrapper {
+    max-width: 767px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 479px) {
+  .wrapper {
+    max-width: 479px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.header {
+  font-family: "Futura Book";
+  font-weight: normal;
+  font-style: normal;
+  width: 100%;
+  height: 83px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #131313;
+}
+@media (max-width: 479px) {
+  .header {
+    height: 51px;
+  }
+}
+.header h1:first-child {
+  width: 1px;
+}
+.header--logo {
+  width: 20%;
+  margin-left: 5.69%;
+  color: #e3b873;
+  font-family: "Futura Heavy";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+}
+@media screen and (max-width: 890px) {
+  .header--logo {
+    width: 60%;
+  }
+}
+@media (max-width: 479px) {
+  .header--logo {
+    font-size: 12px;
+  }
+}
+.header--navbar {
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .header--navbar {
+    display: none;
+  }
+}
+@media screen and (max-width: 890px) {
+  .header--navbar {
+    display: none;
+  }
+}
+.header--list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+  color: #ffffff;
+  font-size: 14px;
+}
+.header--list li:first-child {
+  color: #e3b873;
+}
+.header--list li:hover {
+  color: #e3b873;
+  cursor: pointer;
+}
+.header--contact {
+  font-family: "Futura Heavy";
+  font-weight: normal;
+  font-style: normal;
+  width: 30%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media screen and (max-width: 890px) {
+  .header--contact {
+    width: 40%;
+  }
+}
+.header--phone a {
+  color: #e3b873;
+  font-size: 14px;
+}
+@media (max-width: 767px) {
+  .header--phone a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+@media (max-width: 479px) {
+  .header--phone a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 991px) {
+  .header--request_form {
+    display: none;
+  }
+}
+@media (max-width: 479px) {
+  .header--request_form {
+    display: none;
+  }
+}
+.header--request_form input[type=submit] {
+  width: 161px;
+  height: 37px;
+  background-color: #e3b873;
+  border: none;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.header--request_form input[type=submit]:hover {
+  border: 1px solid #131313;
+}
+
+.main {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  background-color: #131313;
+}
+@media (max-width: 479px) {
+  .main {
+    height: 476px;
+  }
+}
+.main--instagram {
+  width: 5.69%;
+  height: 707px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #e3b873;
+}
+@media (max-width: 991px) {
+  .main--instagram {
+    display: none;
+  }
+}
+.main--instagram p {
+  transform: rotate(90deg);
+  font-family: "Futura Heavy";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+}
+.main--instagram p a {
+  color: #e3b873;
+  text-decoration: none;
+}
+.main--instagram img {
+  height: 51px;
+  margin-top: 40px;
+}
+.main--img {
+  width: 94.31%;
+  height: 707px;
+  box-sizing: border-box;
+  padding-left: 4%;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+@media (max-width: 991px) {
+  .main--img {
+    width: 100%;
+    height: 500px;
+  }
+}
+@media (max-width: 767px) {
+  .main--img {
+    height: 476px;
+    padding: 0 15px;
+    width: 100%;
+  }
+}
+.main--img img:first-child {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+}
+@media (max-width: 767px) {
+  .main--img img:first-child {
+    object-fit: cover;
+    height: 476px;
+  }
+}
+.main--column {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  z-index: 1;
+}
+@media (max-width: 767px) {
+  .main--column {
+    width: 50%;
+  }
+}
+@media (max-width: 479px) {
+  .main--column {
+    width: 100%;
+  }
+}
+.main--heading {
+  line-height: 1.4;
+}
+.main--heading h1 {
+  margin: 0;
+  font-size: 40px;
+}
+@media (max-width: 991px) {
+  .main--heading h1 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 767px) {
+  .main--heading h1 {
+    font-size: 23px;
+  }
+}
+.main--heading span {
+  color: #e3b873;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  font-style: normal;
+}
+.main--text {
+  width: 95%;
+  margin: 1em 0;
+  line-height: 1.5;
+  font-family: "Futura Book";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 22px;
+}
+@media (max-width: 479px) {
+  .main--text {
+    font-size: 18px;
+  }
+}
+.main--text .nowrap {
+  white-space: nowrap;
+}
+.main--text p {
+  margin: 0;
+}
+.main--buttons {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 479px) {
+  .main--buttons {
+    display: block;
+    width: 100%;
+  }
+}
+.main--buttons input[type=submit] {
+  width: 207px;
+  height: 51px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Futura Book";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
+}
+@media (max-width: 479px) {
+  .main--buttons input[type=submit] {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.main--buttons input[type=submit]:first-child {
+  background-color: #e3b873;
+  border: none;
+  margin-right: 20px;
+}
+.main--buttons input[type=submit]:nth-child(2) {
+  background: none;
+  border: 1px solid #ffffff;
+}
+@media (max-width: 479px) {
+  .main--buttons input[type=submit]:nth-child(2) {
+    display: none;
+  }
+}
+.main--buttons input[type=submit]:last-child {
+  display: none;
+}
+@media (max-width: 479px) {
+  .main--buttons input[type=submit]:last-child {
+    width: 100%;
+    margin-bottom: 30px;
+    display: block;
+    background: none;
+    border: 1px solid #ffffff;
+  }
+}
+.main--scroll_down {
+  width: 17.15%;
+  height: 97px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #131313;
+  overflow: visible;
+  position: absolute;
+  top: 92%;
+  color: #ffffff;
+}
+@media screen and (max-width: 890px) {
+  .main--scroll_down {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .main--scroll_down {
+    display: none;
+  }
+}
+.main--scroll_down p {
+  margin-right: 20px;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+}
+.main--scroll_down:hover {
+  color: #e3b873;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.completed {
+  font-family: "Futura Book";
+  font-weight: normal;
+  font-style: normal;
+  width: 100%;
+  height: 1000px;
+  box-sizing: border-box;
+  display: flex;
+  background-color: #131313;
+}
+@media (max-width: 767px) {
+  .completed {
+    height: auto;
+  }
+}
+@media (max-width: 479px) {
+  .completed {
+    height: auto;
+    padding: 80px 10px 0 10px;
+  }
+}
+.completed--description {
+  width: 40%;
+  height: 520px;
+  margin-left: 5%;
+  margin-top: 10%;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+@media (max-width: 767px) {
+  .completed--description {
+    margin-top: 15%;
+  }
+}
+@media (max-width: 479px) {
+  .completed--description {
+    width: 100%;
+    margin: 0;
+  }
+}
+.completed--description h1, .completed--description h2 {
+  color: #e3b873;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  font-style: normal;
+}
+.completed--heading {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 479px) {
+  .completed--heading {
+    width: 50%;
+    align-self: center;
+    text-align: center;
+  }
+}
+.completed--heading h1 {
+  font-size: 27px;
+}
+@media (max-width: 479px) {
+  .completed--heading h1 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .completed--heading img {
+    display: none;
+  }
+}
+.completed--text {
+  width: 90%;
+  line-height: 1.5;
+  font-size: 18px;
+}
+@media (max-width: 479px) {
+  .completed--text {
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+}
+.completed--mobile_picture {
+  display: none;
+}
+@media (max-width: 479px) {
+  .completed--mobile_picture {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .completed--mobile_picture img:first-child, .completed--mobile_picture img:last-child {
+    max-width: 36px;
+    max-height: 36px;
+    position: absolute;
+    top: 50%;
+  }
+  .completed--mobile_picture img:first-child {
+    left: 8%;
+  }
+  .completed--mobile_picture img:last-child {
+    right: 8%;
+  }
+}
+.completed--columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: flex-start;
+}
+@media (max-width: 479px) {
+  .completed--columns {
+    padding-left: 10px;
+  }
+}
+.completed--columns h2 {
+  font-size: 18px;
+}
+@media (max-width: 479px) {
+  .completed--columns h2 {
+    font-size: 14px;
+  }
+}
+.completed--columns p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+@media (max-width: 479px) {
+  .completed--columns p {
+    font-size: 14px;
+  }
+}
+.completed--columns div {
+  width: 40%;
+}
+.completed--columns div:first-child p {
+  width: 70%;
+}
+@media (max-width: 479px) {
+  .completed--columns div:first-child {
+    width: 40%;
+    margin-right: 0.5em;
+  }
+}
+.completed--slider_container {
+  margin-top: 30px;
+  display: flex;
+  width: 206px;
+  justify-content: space-between;
+  align-items: center;
+}
+.completed--slider_container img:hover {
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .completed--slider_container {
+    display: none;
+  }
+}
+.completed--pictures {
+  width: 60%;
+  height: 570px;
+  margin-top: 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 479px) {
+  .completed--pictures {
+    display: none;
+  }
+}
+.completed--themes {
+  font-family: "Yeseva One";
+  font-weight: normal;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.completed--themes h4:first-child {
+  color: #e3b873;
+  line-height: 2;
+  border-bottom: 2px solid #e3b873;
+  opacity: 1;
+}
+.completed--themes h4 {
+  color: #ffffff;
+  opacity: 0.3;
+  margin-right: 5%;
+  font-size: 14px;
+}
+@media (max-width: 991px) {
+  .completed--themes h4 {
+    font-size: 12px;
+  }
+}
+.completed--themes h4:hover {
+  color: #e3b873;
+  opacity: 1;
+  cursor: pointer;
+}
+.completed--img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.completed--img img:first-child {
+  width: 100%;
+  margin-right: 20px;
+}
+.completed--img img:nth-child(2) {
+  overflow: hidden;
+}
+.completed--img img:last-child {
+  width: 74.72px;
+  height: 74.72px;
+  position: absolute;
+  right: 3%;
+}
+.completed--img img:last-child:hover {
+  cursor: pointer;
+}
+
+.control {
+  width: 100%;
+  margin-top: -18%;
+  box-sizing: border-box;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .control {
+    margin-top: -25%;
+  }
+}
+@media (max-width: 767px) {
+  .control {
+    background-color: #131313;
+    color: #ffffff;
+    padding: 260px 10px 0 10px;
+  }
+}
+@media (max-width: 479px) {
+  .control {
+    padding-top: 160px;
+  }
+}
+.control--text {
+  width: 196px;
+  height: 66.79px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .control--text {
+    font-size: 22px;
+  }
+}
+.control--text .icon {
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.control--text .icon img:first-child, .control--text .icon img:last-child {
+  width: 32px;
+  height: 1.54px;
+}
+.control--video {
+  margin-top: 50px;
+}
+@media (max-width: 767px) {
+  .control--video {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .control--video iframe {
+    width: 100%;
+  }
+}
+@media (max-width: 479px) {
+  .control--video iframe {
+    width: 100%;
+    height: 207px;
+  }
+}
+
+.broadcast {
+  width: 100%;
+  height: 500px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+}
+@media (max-width: 767px) {
+  .broadcast {
+    height: 600px;
+    padding: 15px;
+    background-color: #131313;
+    color: #ffffff;
+  }
+}
+.broadcast--text {
+  width: 54%;
+  margin-bottom: 3em;
+  font-family: "Futura Book";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 2;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .broadcast--text {
+    width: 100%;
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+}
+@media (max-width: 479px) {
+  .broadcast--text {
+    font-size: 14px;
+  }
+}
+.broadcast--text p {
+  margin: 0;
+}
+.broadcast--text .nowrap {
+  white-space: nowrap;
+}
+.broadcast--form {
+  width: 60%;
+}
+@media (max-width: 767px) {
+  .broadcast--form {
+    width: 100%;
+  }
+}
+.broadcast--form form {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media (max-width: 767px) {
+  .broadcast--form form {
+    flex-direction: column;
+    height: 300px;
+  }
+}
+.broadcast--form form .name, .broadcast--form form .phone {
+  height: 51px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+@media (max-width: 767px) {
+  .broadcast--form form .name, .broadcast--form form .phone {
+    width: 100%;
+  }
+}
+.broadcast input[type=text] {
+  width: 231px;
+  border: none;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  font-family: "Futura Book";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+}
+@media (max-width: 767px) {
+  .broadcast input[type=text] {
+    width: 100%;
+    background: none;
+    border-bottom: 1px solid #ffffff;
+  }
+}
+.broadcast input[type=text]::-webkit-input-placeholder {
+  color: #131313;
+}
+@media (max-width: 767px) {
+  .broadcast input[type=text]::-webkit-input-placeholder {
+    color: #ffffff;
+  }
+}
+.broadcast input[type=text]::-moz-placeholder {
+  color: #131313;
+}
+@media (max-width: 767px) {
+  .broadcast input[type=text]::-moz-placeholder {
+    color: #ffffff;
+  }
+}
+.broadcast input[type=text]:focus {
+  outline: none;
+  border: 2px solid #e3b873;
+}
+.broadcast label {
+  font-family: "Futura Book";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+  opacity: 0.7;
+}
+.broadcast input[type=submit] {
+  width: 200px;
+  height: 51px;
+  background-color: #e3b873;
+  border: none;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Futura Heavy";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+}
+@media (max-width: 767px) {
+  .broadcast input[type=submit] {
+    width: 100%;
+  }
+}
+.broadcast input[type=submit]:hover {
+  border: 1px solid #ffffff;
+}
+.broadcast--checkbox .container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #131313;
+  opacity: 1;
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  .broadcast--checkbox .container {
+    color: #ffffff;
+  }
+}
+.broadcast--checkbox .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.broadcast--checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #e3b873;
+}
+.broadcast--checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.broadcast--checkbox .container input:checked ~ .checkmark::after {
+  display: block;
+}
+.broadcast--checkbox .container .checkmark::after {
+  left: 7px;
+  top: 2px;
+  width: 3px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.types {
+  width: 100%;
+  height: 850px;
+  box-sizing: border-box;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+}
+@media (max-width: 991px) {
+  .types {
+    height: auto;
+  }
+}
+.types--heading h3 {
+  margin: 0;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+}
+@media (max-width: 991px) {
+  .types--heading h3 {
+    margin: 20px 0;
+    font-size: 22px;
+  }
+}
+.types--examples {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media (max-width: 991px) {
+  .types--examples {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 479px) {
+  .types--examples {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+.types--example {
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 991px) {
+  .types--example {
+    margin: 20px 0;
+  }
+}
+@media (max-width: 479px) {
+  .types--example {
+    margin: 20px 20px;
+  }
+}
+.types--example img {
+  display: block;
+  width: 100%;
+  max-width: 392px;
+}
+.types--text {
+  width: 330px;
+  height: 286px;
+  margin-top: -130px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #ffffff;
+  color: #131313;
+  overflow: visible;
+  box-shadow: 1px 1px 3px #f9f9f9;
+}
+@media (max-width: 479px) {
+  .types--text {
+    width: 270px;
+    height: 241px;
+    margin-left: 0;
+  }
+}
+.types--text h4 {
+  font-family: "Yeseva One";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  margin: 1em 0 0 1em;
+}
+@media (max-width: 479px) {
+  .types--text h4 {
+    font-size: 15px;
+  }
+}
+.types--text li {
+  font-family: "Futura Book";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+  color: #959595;
+  line-height: 1.8;
+}
+@media (max-width: 479px) {
+  .types--text li {
+    font-size: 13px;
+  }
+}
+.types--price {
+  width: 228px;
+  height: 54px;
+  margin-top: -20px;
+  margin-left: 30px;
+  background-color: #e3b873;
+  color: #ffffff;
+  overflow: visible;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  text-align: center;
+  line-height: 3;
+}
+@media (max-width: 479px) {
+  .types--price {
+    margin-left: 0;
+    font-size: 15px;
+    width: 190px;
+    height: 40px;
+  }
+}
+
+.measure {
+  width: 100%;
+  height: 1000px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+}
+.measure--scheme {
+  width: 63.29%;
+  height: 692px;
+  margin-top: -30px;
+  background-image: url(images/1c8a28238edc0e3a4d9cd7ff3a57f74d.png);
+  background-repeat: no-repeat;
+  background-position-y: -50px;
+  overflow: hidden;
+}
+.measure--scheme .circle {
+  width: 636.12px;
+  height: 636.12px;
+  margin-left: -15%;
+  position: relative;
+  border: 2px solid #e3b873;
+  border-radius: 50%;
+}
+.measure--scheme .circle .container .container--item {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.measure--scheme .circle .container .container--item:first-child {
+  transform: rotate(-55deg) translate(324px) rotate(55deg);
+  margin: -22px;
+}
+.measure--scheme .circle .container .container--item:nth-child(2) {
+  transform: rotate(-29deg) translate(318px) rotate(29deg);
+  margin: -23px;
+}
+.measure--scheme .circle .container .container--item:nth-child(3) {
+  transform: rotate(2deg) translate(318px) rotate(-2deg);
+  margin: -30px;
+}
+.measure--scheme .circle .container .container--item:last-child {
+  width: 60%;
+  transform: rotate(32deg) translate(318px) rotate(-32deg);
+  margin: -32px;
+}
+.measure--scheme .circle .container .container--item:last-child .nowrap {
+  white-space: nowrap;
+}
+.measure--scheme .circle .container .container--item .circle_small {
+  width: 41.76px;
+  height: 41.76px;
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: #e3b873;
+  border: 15px solid #ffffff;
+  border-radius: 50%;
+}
+.measure--scheme .circle .container .container--item h2 {
+  color: #ffffff;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+}
+.measure--scheme .circle .container .container--item p {
+  color: #131313;
+  font-family: "Futura Heavy";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  margin: 0;
+  line-height: 1.3;
+}
+.measure--request {
+  width: 36.81%;
+  display: flex;
+  flex-direction: column;
+}
+.measure--request .form {
+  display: flex;
+  align-self: flex-end;
+}
+.measure--request .form form {
+  width: 506px;
+  height: 509px;
+  padding-left: 60px;
+  box-sizing: border-box;
+  background-color: #131313;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.measure--request .form form h4 {
+  width: 70%;
+  text-align: center;
+  margin: 0 0 0 8%;
+  font-family: "Futura Heavy";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+}
+.measure--request .form form input[type=text] {
+  width: 408px;
+  border: none;
+  background-color: #131313;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  font-family: "Futura Book";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+}
+.measure--request .form form input[type=text]::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.measure--request .form form input[type=text]::-moz-placeholder {
+  color: #ffffff;
+}
+.measure--request .form form input[type=text]:focus {
+  outline: none;
+  border: 2px solid #e3b873;
+}
+.measure--request .form form label {
+  font-family: "Futura Book";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+  opacity: 0.7;
+}
+.measure--request .form form .name, .measure--request .form form .phone, .measure--request .form form .email {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  line-height: 1.5;
+}
+.measure--request .form form .checkbox .container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #ffffff;
+  opacity: 1;
+  font-size: 16px;
+}
+.measure--request .form form .checkbox .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.measure--request .form form .checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #e3b873;
+}
+.measure--request .form form .checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.measure--request .form form .checkbox .container input:checked ~ .checkmark::after {
+  display: block;
+}
+.measure--request .form form .checkbox .container .checkmark::after {
+  left: 7px;
+  top: 2px;
+  width: 3px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.measure--request .form form .button {
+  align-self: flex-end;
+  margin-right: 40px;
+}
+.measure--request .form form input[type=submit] {
+  width: 200px;
+  height: 51px;
+  background-color: #e3b873;
+  border: none;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Futura Heavy";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
+}
+.measure--request .form form input[type=submit]:hover {
+  border: 1px solid #131313;
+}
+.measure--request--text {
+  margin-top: 30px;
+  margin-left: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.measure--request--text p {
+  width: 50%;
+  line-height: 1.3;
+  font-family: "Futura Heavy";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  color: #e3b873;
+}
+@media (max-width: 991px) {
+  .measure {
+    display: none;
+  }
+}
+
+.styles {
+  width: 100%;
+  height: 864px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-image: url(images/8d29ea301f4d38b2039e344d86faa8ba.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 479px) {
+  .styles {
+    height: auto;
+    flex-direction: column;
+    background: none;
+  }
+}
+.styles--list {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+@media (max-width: 479px) {
+  .styles--list {
+    width: 100%;
+    align-items: center;
+  }
+}
+.styles--list .heading {
+  width: 65%;
+  color: #e3b873;
+  margin-left: 3em;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 27px;
+  line-height: 1.3;
+}
+@media (max-width: 767px) {
+  .styles--list .heading {
+    font-size: 22px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 479px) {
+  .styles--list .heading {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 22px;
+  }
+}
+.styles--list ul {
+  padding: 0;
+  margin-left: 4em;
+  color: #ffffff;
+  list-style-type: none;
+  line-height: 2.7;
+  font-family: "Proxima Nova";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+}
+.styles--list ul li:first-child {
+  color: #e3b873;
+  line-height: 1.5;
+  border-bottom: 1px solid #e3b873;
+  width: 150px;
+}
+@media (max-width: 767px) {
+  .styles--list ul {
+    font-size: 18px;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 479px) {
+  .styles--list ul {
+    display: none;
+  }
+}
+.styles--mobile_picture {
+  display: none;
+}
+@media (max-width: 479px) {
+  .styles--mobile_picture {
+    margin: 10px 0;
+    margin-bottom: -30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+}
+.styles--mobile_picture img:first-child, .styles--mobile_picture img:last-child {
+  position: absolute;
+  top: 50%;
+}
+.styles--mobile_picture img:first-child {
+  left: 8%;
+}
+.styles--mobile_picture img:last-child {
+  right: 8%;
+}
+.styles--images {
+  width: 60%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .styles--images {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 479px) {
+  .styles--images {
+    display: none;
+  }
+}
+.styles--images img:first-child {
+  width: 100%;
+  max-width: 353.81px;
+  height: 556.86px;
+  margin-top: -40px;
+}
+@media (max-width: 991px) {
+  .styles--images img:first-child {
+    margin: 0 0 10px 0;
+  }
+}
+.styles--images img:nth-child(2) {
+  width: 100%;
+  max-width: 353.81px;
+  height: 349.47px;
+  margin-top: 30px;
+  margin-bottom: -40px;
+}
+@media (max-width: 991px) {
+  .styles--images img:nth-child(2) {
+    display: none;
+  }
+}
+.styles--images img:nth-child(3) {
+  width: 100%;
+  max-width: 354px;
+  height: 275px;
+  margin-top: -100px;
+  margin-right: 60px;
+}
+@media (max-width: 991px) {
+  .styles--images img:nth-child(3) {
+    margin: 0;
+  }
+}
+.styles--images img:last-child {
+  width: 100%;
+  max-width: 353.81px;
+  height: 625.23px;
+  margin: 30px 60px 30px 0;
+}
+@media (max-width: 991px) {
+  .styles--images img:last-child {
+    display: none;
+  }
+}
+
+.design_project {
+  width: 100%;
+  height: 580px;
+  padding-top: 100px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+}
+@media (max-width: 991px) {
+  .design_project {
+    height: auto;
+    padding-top: 20px;
+    background-color: #131313;
+    color: #ffffff;
+  }
+}
+@media (max-width: 479px) {
+  .design_project {
+    padding-top: 130px;
+  }
+}
+.design_project--heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+.design_project--heading h3 {
+  font-family: "Yeseva One";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+}
+@media (max-width: 479px) {
+  .design_project--heading h3 {
+    font-size: 22px;
+  }
+}
+.design_project--heading p {
+  width: 53%;
+  text-align: center;
+  font-family: "Futura Book";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.design_project--heading p .nowrap {
+  white-space: nowrap;
+}
+@media (max-width: 479px) {
+  .design_project--heading p {
+    width: 85%;
+    font-size: 15px;
+  }
+}
+.design_project--examples {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 991px) {
+  .design_project--examples {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 0;
+  }
+}
+.design_project--examples img {
+  height: 421px;
+}
+.design_project--example {
+  margin: 0 15px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+.design_project--example img {
+  width: 100%;
+  max-width: 392px;
+}
+@media (max-width: 991px) {
+  .design_project--example {
+    margin: 20px 20px;
+  }
+}
+@media (max-width: 479px) {
+  .design_project--example {
+    margin: 30px 20px;
+  }
+}
+.design_project--example:nth-child(3) span {
+  display: none;
+}
+@media (max-width: 991px) {
+  .design_project--example:nth-child(3) span {
+    display: inline;
+  }
+}
+@media (max-width: 991px) {
+  .design_project--example:nth-child(3) .hide {
+    display: none;
+  }
+}
+.design_project--text {
+  width: 330px;
+  margin-top: -130px;
+  margin-left: 30px;
+  background-color: #ffffff;
+  color: #131313;
+  overflow: visible;
+}
+@media (max-width: 479px) {
+  .design_project--text {
+    width: 270px;
+    height: auto;
+    margin-left: 0;
+  }
+}
+.design_project--text h4 {
+  margin: 1em 0 1em 1.5em;
+  padding: 0;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+}
+@media (max-width: 479px) {
+  .design_project--text h4 {
+    font-size: 15px;
+  }
+}
+.design_project--text .list {
+  padding: 0;
+  margin: 1em 0 3em 3em;
+  line-height: 1.8;
+  color: #959595;
+  font-family: "Futura Book";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+}
+@media (max-width: 479px) {
+  .design_project--text .list {
+    font-size: 13px;
+  }
+}
+.design_project--price {
+  width: 228px;
+  height: 54px;
+  margin-top: -20px;
+  margin-left: 30px;
+  padding-left: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #e3b873;
+  color: #ffffff;
+  overflow: visible;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+}
+@media (max-width: 479px) {
+  .design_project--price {
+    width: 190px;
+    height: 40px;
+    margin-left: 0;
+    padding-left: 2.5em;
+    font-size: 15px;
+  }
+}
+
+.process {
+  width: 100%;
+  height: 1100px;
+  box-sizing: border-box;
+  padding-top: 45%;
+  display: flex;
+  background-color: #131313;
+}
+@media (max-width: 991px) {
+  .process {
+    padding-top: 50px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+.process--description {
+  width: 40%;
+  margin-left: 5em;
+  margin-top: -8em;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+@media (max-width: 991px) {
+  .process--description {
+    width: 100%;
+    margin: 20px 0;
+    align-items: center;
+    text-align: center;
+  }
+}
+.process--description .description--heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.process--description .description--heading p {
+  font-family: "Futura Heavy";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+}
+.process--description .description--heading .main_heading {
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.process--description .description--heading .main_heading h1 {
+  width: 50%;
+  margin-right: 10px;
+  color: #e3b873;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 27px;
+}
+@media (max-width: 991px) {
+  .process--description .description--heading .main_heading h1 {
+    width: 100%;
+  }
+}
+.process--description .description--heading .main_heading img {
+  align-self: flex-end;
+}
+@media (max-width: 991px) {
+  .process--description .description--heading .main_heading img {
+    display: none;
+  }
+}
+.process--text {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+@media (max-width: 991px) {
+  .process--text {
+    display: none;
+  }
+}
+.process--text h2 {
+  font-family: "Yeseva One";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+}
+.process--text h3 {
+  color: #e3b873;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+}
+.process--text p {
+  margin: 0;
+  margin-top: 0.7em;
+  line-height: 1.8;
+  font-family: "Futura Book";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+}
+.process--slider_container {
+  display: flex;
+  width: 287px;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .process--slider_container {
+    display: none;
+  }
+}
+.process--slider_container img:hover {
+  cursor: pointer;
+}
+.process--steps {
+  width: 60%;
+  margin-right: 5em;
+}
+@media (max-width: 991px) {
+  .process--steps {
+    width: 100%;
+    margin: 0;
+  }
+}
+.process--steps .process--container {
+  width: 765px;
+  height: 180px;
+  margin: 20px 0;
+  color: #5a5a5a;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+@media (max-width: 991px) {
+  .process--steps .process--container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .process--steps .process--container {
+    color: #ffffff;
+  }
+}
+.process--steps .process--container .process--item {
+  width: 30%;
+}
+.process--steps .process--container .process--item h2 {
+  width: 16px;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1.5;
+  border-bottom: 1px solid rgba(227, 184, 115, 0.3);
+}
+.process--steps .process--container .process--item:first-child h2 {
+  border-bottom: 1px solid #e3b873;
+}
+.process--steps .process--container .process--item:first-child p {
+  width: 70%;
+}
+.process--steps .process--container .process--item:first-child .nowrap {
+  white-space: nowrap;
+}
+.process--steps .process--container .process--item p {
+  width: 50%;
+  margin: 0;
+  font-family: "Futura Book";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+}
+.process--steps .process--container .process--item:first-child {
+  color: #ffffff;
+  opacity: 1;
+}
+.process--img {
+  margin-top: 3em;
+}
+.process--img img {
+  width: 100%;
+  max-width: 765px;
+  height: 376.64px;
+}
+@media (max-width: 991px) {
+  .process--img {
+    margin: 3em auto;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .process--img {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 479px) {
+  .process--img {
+    display: none;
+  }
+}
+
+.team {
+  width: 100%;
+  height: 600px;
+  padding-top: 15%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #131313;
+}
+@media (max-width: 991px) {
+  .team {
+    height: auto;
+    padding-top: 0;
+  }
+}
+@media (max-width: 479px) {
+  .team {
+    padding-top: 12%;
+  }
+}
+.team--heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  color: #ffffff;
+}
+@media (max-width: 479px) {
+  .team--heading {
+    padding: 0 10px;
+  }
+}
+.team--heading h3 {
+  font-family: "Yeseva One";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+}
+@media (max-width: 479px) {
+  .team--heading h3 {
+    font-size: 22px;
+  }
+}
+.team--heading p {
+  width: 60%;
+  text-align: center;
+  line-height: 1.5;
+  font-family: "Futura Book";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+}
+@media (max-width: 479px) {
+  .team--heading p {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+.team--members {
+  width: 85.83%;
+  margin-top: 3em;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+}
+.team--members img {
+  height: 421px;
+}
+@media (max-width: 991px) {
+  .team--members {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.team--member {
+  margin: 0 15px;
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+@media (max-width: 991px) {
+  .team--member {
+    align-items: center;
+    margin-bottom: 80px;
+  }
+}
+.team--member img:first-child {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: -9%;
+  left: -9%;
+}
+.team--member img {
+  width: 100%;
+  max-width: 272.24px;
+  max-height: 380px;
+}
+.team--signature {
+  width: 233px;
+  height: 137px;
+  margin-top: -130px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #131313;
+  overflow: visible;
+}
+@media (max-width: 991px) {
+  .team--signature {
+    margin-left: 0;
+  }
+}
+.team--signature h4 {
+  margin: 0;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+}
+.team--signature p {
+  font-family: "Futura Book";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  color: #959595;
+}
+.team--experience {
+  width: 233px;
+  height: 44px;
+  margin-top: -20px;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e3b873;
+  color: #ffffff;
+  overflow: visible;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
+}
+@media (max-width: 991px) {
+  .team--experience {
+    margin-left: 0;
+  }
+}
+.team--text {
+  width: 45%;
+  text-align: center;
+  line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  font-family: "Futura Book";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+}
+.team--text p {
+  margin: 1em 0 0 0;
+}
+.team--text p .nowrap {
+  white-space: nowrap;
+}
+@media (max-width: 991px) {
+  .team--text {
+    display: none;
+  }
+}
+
+.clients {
+  width: 100%;
+  height: 1600px;
+  padding-top: 35%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+}
+@media (max-width: 991px) {
+  .clients {
+    height: auto;
+    padding-top: 0;
+  }
+}
+@media (max-width: 479px) {
+  .clients {
+    display: none;
+  }
+}
+.clients--heading {
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #131313;
+}
+@media (max-width: 991px) {
+  .clients--heading {
+    margin-top: 20px;
+  }
+}
+.clients--heading h3 {
+  font-family: "Yeseva One";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+}
+.clients--heading p {
+  width: 80%;
+  text-align: center;
+  line-height: 1.5;
+  font-family: "Futura Book";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+}
+.clients--cards {
+  width: 90%;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 991px) {
+  .clients--cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+.clients--card {
+  margin: 0 15px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  box-shadow: 5px 5px 5px #f9f9f9, -5px -5px 5px #f9f9f9;
+}
+@media (max-width: 991px) {
+  .clients--card {
+    width: 60%;
+    margin: 30px 15px;
+  }
+}
+.clients--card .clients--name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.clients--card .clients--name img {
+  margin: 1em 1em;
+}
+.clients--card .clients--name h4 {
+  width: 50%;
+  line-height: 1.3;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+}
+.clients--review {
+  padding: 0 1em 4em 1em;
+  background-color: #ffffff;
+  color: #131313;
+}
+.clients--review p {
+  margin: 0;
+  line-height: 2;
+  color: #959595;
+  font-family: "Futura Book";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+}
+.clients--experience {
+  width: 293.75px;
+  height: 54.03px;
+  margin-bottom: -1.4em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #e3b873;
+  color: #ffffff;
+  box-shadow: 1px 1px 5px #e3b873;
+}
+@media (max-width: 767px) {
+  .clients--experience {
+    width: 100%;
+  }
+}
+.clients--experience .square {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #ffffff;
+}
+.clients--experience .square img {
+  width: 32.35px;
+  height: 31.35px;
+  margin-right: 1em;
+}
+.clients--experience .time {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clients--experience .time img {
+  width: 32.78px;
+  height: 31.35px;
+  margin-right: 1em;
+}
+
+.questions {
+  width: 100%;
+  height: 0;
+  box-sizing: border-box;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .questions {
+    display: block;
+    height: auto;
+  }
+}
+.questions form {
+  width: 61.32%;
+  height: 445.32px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #131313;
+  color: #ffffff;
+  z-index: 1;
+}
+@media (max-width: 991px) {
+  .questions form {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 767px) {
+  .questions form {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    align-items: flex-start;
+    padding: 0 20px;
+  }
+}
+.questions form h3 {
+  width: 70%;
+  text-align: center;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+}
+@media (max-width: 991px) {
+  .questions form h3 {
+    margin: 50px 0;
+  }
+}
+@media (max-width: 767px) {
+  .questions form h3 {
+    align-self: center;
+    margin: 50px 0;
+  }
+}
+@media (max-width: 479px) {
+  .questions form h3 {
+    margin-top: 0;
+  }
+}
+.questions form input[type=text] {
+  width: 100%;
+  border: none;
+  background-color: #131313;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  font-family: "Futura Book";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+}
+@media (max-width: 991px) {
+  .questions form input[type=text] {
+    width: 100%;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ffffff;
+  }
+}
+.questions form input[type=text]::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.questions form input[type=text]::-moz-placeholder {
+  color: #ffffff;
+}
+.questions form input[type=text]:focus {
+  outline: none;
+  border: 2px solid #e3b873;
+}
+.questions form label {
+  font-family: "Futura Book";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+  opacity: 0.7;
+}
+.questions form .name_phone {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .questions form .name_phone {
+    width: 100%;
+    display: block;
+  }
+}
+.questions form .name_phone .name, .questions form .name_phone .phone {
+  line-height: 1.5;
+}
+.questions form .question {
+  width: 60%;
+  line-height: 1.5;
+}
+@media (max-width: 767px) {
+  .questions form .question {
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .questions form .question input[type=text] {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ffffff;
+  }
+}
+.questions form .checkbox .container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #ffffff;
+  opacity: 1;
+  font-size: 16px;
+}
+.questions form .checkbox .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.questions form .checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #e3b873;
+}
+.questions form .checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.questions form .checkbox .container input:checked ~ .checkmark::after {
+  display: block;
+}
+.questions form .checkbox .container .checkmark::after {
+  left: 7px;
+  top: 2px;
+  width: 3px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+@media (max-width: 767px) {
+  .questions form .button {
+    width: 100%;
+  }
+}
+.questions form .button input[type=submit] {
+  width: 200px;
+  height: 51px;
+  background-color: #e3b873;
+  border: none;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Futura Heavy";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+}
+@media (max-width: 991px) {
+  .questions form .button input[type=submit] {
+    margin: 40px 0;
+  }
+}
+@media (max-width: 767px) {
+  .questions form .button input[type=submit] {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+.questions form .button input[type=submit]:hover {
+  border: 1px solid #131313;
+}
+
+.contact {
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/7eaf16b91159d7ffa03b3a329cd39e3b.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+@media (max-width: 991px) {
+  .contact {
+    padding: 20px;
+  }
+}
+.contact--wrapper {
+  background-color: #181818;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  z-index: 0;
+}
+@media (max-width: 991px) {
+  .contact--wrapper {
+    box-sizing: border-box;
+    background-color: #131313;
+    opacity: 1;
+  }
+}
+.contact--address {
+  color: #e3b873;
+  text-align: center;
+  line-height: 1.5;
+  margin: 3em 0 1em 0;
+  z-index: 1;
+}
+.contact--address h3 {
+  margin: 0;
+  font-size: 20px;
+}
+@media (max-width: 479px) {
+  .contact--address h3 {
+    font-size: 18px;
+  }
+}
+.contact--address a {
+  color: #e3b873;
+  text-decoration: none;
+}
+.contact--address a:hover {
+  color: #ffffff;
+}
+.contact--social_icons {
+  z-index: 1;
+}
+@media (max-width: 991px) {
+  .contact--social_icons {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 991px) {
+  .contact--social_icons img {
+    max-height: 39px;
+    max-width: 39px;
+    margin: 0 5px;
+  }
+}
+.contact--social_icons a {
+  margin: 0 0.3em;
+}
+.contact--map {
+  width: 64.24%;
+  margin: 1em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+@media (max-width: 991px) {
+  .contact--map {
+    width: 100%;
+    order: -1;
+  }
+}
+.contact--map img {
+  width: 100%;
+  max-width: 925px;
+  margin: 20px 0;
+}
+
+.footer {
+  width: 100%;
+  height: 133px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #131313;
+}
+@media (max-width: 479px) {
+  .footer {
+    display: none;
+  }
+}
